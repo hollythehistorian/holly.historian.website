@@ -1,0 +1,31 @@
+PHOTO FILES — EXACT NAMES
+=========================
+
+Keep these exact lowercase filenames and locations.
+
+1. Existing main portrait
+   images/headshot.jpeg
+
+2. About section — you in an archive or reading room
+   images/about-archive.webp
+
+3. Research section — city / architecture / research geography
+   images/research-city.webp
+
+4. Photography section — strongest city image
+   images/photography/city-01.webp
+
+5. Photography section — strongest landscape
+   images/photography/landscape-01.webp
+
+6. Photography section — you holding your camera / field portrait
+   images/photography/camera-01.webp
+
+7. Photography section — archive / research / fieldwork detail
+   images/photography/archive-01.webp
+
+After replacing images, open index.html and search for:
+REPLACE CAPTION
+
+Replace each temporary caption with the real location and year.
+Also update the nearby alt="..." description so it accurately describes the photo.

@@ -1,0 +1,17 @@
+GOOGLE + SHARING CHECKLIST
+
+1. Upload this complete package to the website repository root.
+2. Replace the placeholder photos and all "REPLACE CAPTION" text.
+3. Push to main.
+4. GitHub > repository > Settings > Pages > Source: GitHub Actions.
+5. In the same Pages screen, set custom domain: hollyharrishistorian.com.
+6. Enable Enforce HTTPS when available.
+7. Verify that the "Validate and deploy website" Action succeeds.
+8. Open https://hollyharrishistorian.com/ in a private window and on cellular data.
+9. Add hollyharrishistorian.com to Google Search Console and verify ownership.
+10. Submit https://hollyharrishistorian.com/sitemap.xml.
+11. Use Search Console URL Inspection on the homepage and request indexing.
+12. Test the live URL in Google's Rich Results Test.
+13. Share the live domain, never a file:/// or localhost URL.
+
+DO NOT add meta-keyword stuffing or install random SEO plugins. This is a static site; ranking depends on useful authoritative content, crawlability, speed, institutional/reputable links, and consistent public profiles.
