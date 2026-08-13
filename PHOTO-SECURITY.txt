@@ -1,0 +1,23 @@
+PUBLIC PHOTO SECURITY
+
+All website photographs in this package are PUBLIC DERIVATIVES, not private originals.
+
+Applied:
+- resized public web copies
+- fresh files that do not carry original GPS/camera metadata
+- embedded Artist: Holly Harris
+- embedded Copyright: © Holly Harris. All rights reserved.
+- embedded rights statement
+- visible, restrained © Holly Harris mark
+- HTTPS-compatible static delivery
+
+Important:
+A photograph displayed on a public website cannot remain encrypted from the visitor.
+The browser must be able to decode the image in order to display it. Encryption protects
+transport (HTTPS) or private storage, not a publicly displayed image.
+
+Keep full-resolution originals outside the public GitHub repository in encrypted/private
+storage. Publish only these derivative copies.
+
+Do not commit private originals, HEIC camera masters, restricted archival material,
+credentials, keys, or images with sensitive identifying information.

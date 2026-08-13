@@ -1,46 +1,46 @@
-# Holly Harris — Option 1 final website
+# Holly Harris — refined editorial release
 
-Final **Foreign Affairs × Monocle** direction: restrained, photographic, sophisticated, and one continuous scrolling page.
+Replace the existing website with the contents of this folder.
 
-Navigation: **About · Research · For Media · CV · Photography · Contact**.
+The public navigation remains:
+**About · Research · For Media · CV · Photography · Contact**
 
-## Identity
-The hierarchy is **Holly Harris → Historian → U.S.–Russia Relations & American Foreign Policy**. The secondary descriptor is **Historian · Researcher · Writer**. “Academic” is intentionally not added because the Ph.D. affiliation, fellowships, publications, CV, and research sections already establish it.
+## Main visual changes
+- reduced hero headline size
+- larger, more confident HOLLY HARRIS / HISTORIAN masthead
+- stronger red section markers
+- smaller, better-proportioned section headings
+- narrower editorial text measure
+- custom photo ratios instead of equal template tiles
+- Kazakhstan photography arranged as a magazine sequence
 
-## Replace photographs
-Use these exact paths:
-- `images/headshot.jpeg`
-- `images/about-archive.webp`
-- `images/research-city.webp`
-- `images/photography/city-01.webp`
-- `images/photography/landscape-01.webp`
-- `images/photography/camera-01.webp`
-- `images/photography/archive-01.webp`
+## Photo captions
+Field Notes images are captioned either:
+- `Mangystau Region, Kazakhstan · Summer 2025`
+- `Tian Shan Mountains, Kazakhstan · Summer 2025`
 
-Then search `index.html` for `REPLACE CAPTION`, enter the correct location/year, and update the nearby `alt` text. Keep original/private camera files outside the public repository.
+The Clinton archive image is labeled as archival research rather than Kazakhstan.
 
-## Install
-1. Back up the current repository.
-2. Copy the **contents** of this folder into the repository root; `index.html` must be at the root.
-3. Replace placeholder photographs.
-4. Run:
+## Copyright and security
+Website images are public derivatives. They contain:
+- a visible `© Holly Harris` mark
+- Artist and Copyright metadata
+- a rights statement
+- no inherited GPS/device metadata from the uploaded originals
 
-```bash
-python -m pip install -r requirements.txt
-python scripts/validate_site.py
-python scripts/seo_check.py
-```
+Read `PHOTO-SECURITY.txt`.
 
-5. Commit and push:
+A public website image cannot be encrypted while remaining viewable. Keep the original
+full-resolution photographs in private/encrypted storage and publish only these derivatives.
 
-```bash
-git add -A
-git commit -m "Launch Option 1 editorial website"
-git push origin main
-```
+## GitHub upload
+At the repository root, replace:
+- `index.html`
+- `styles.css`
+- the matching files under `images/`
 
-## GitHub Pages
-In GitHub: **Settings → Pages → Build and deployment → Source → GitHub Actions**. Confirm the custom domain is `hollyharrishistorian.com` and enable **Enforce HTTPS** when available.
+Upload the new `mangystau-01.webp`, `mangystau-02.webp`, and `landscape-05.webp` as new files.
 
-## Google
-After launch, add the domain to Google Search Console, submit `https://hollyharrishistorian.com/sitemap.xml`, inspect the homepage, and request indexing.
+Do not change or delete the working `CNAME`.
+
+After committing to `main`, wait for GitHub Pages to rebuild and hard-refresh the site.

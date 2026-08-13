@@ -16,3 +16,324 @@ body{background:var(--paper2);color:var(--ink);font-size:16px}
 @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.hero-copy{padding:75px 28px}.portrait{min-height:auto}.portrait img{min-height:auto;max-height:72vh;aspect-ratio:16/10}.section-grid{grid-template-columns:1fr}.research-facts{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery .gallery-wide{grid-row:auto}}
 @media(max-width:640px){.header-row{height:68px}.wordmark-name{font-size:19px}.hero-copy{padding:58px 20px 52px}h1{font-size:55px}.research-facts,.gallery{grid-template-columns:1fr}.gallery .gallery-wide img,.gallery img{aspect-ratio:3/2}}
 @media(min-width:981px){#hero-title{max-width:700px}}
+
+
+/* Editorial image art direction — custom crops for Holly's actual photographs */
+@media (min-width: 981px) {
+  .about-layout {grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);align-items:center;}
+  .editorial-photo{margin-top:0;}
+  .editorial-photo img{aspect-ratio:3/2;object-fit:cover;object-position:center 52%;}
+  .wide-photo{width:min(62%,610px);margin:54px 0 0 auto;}
+  .wide-photo img{aspect-ratio:4/5;object-fit:cover;object-position:center 42%;}
+  .gallery{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:44px 28px;align-items:start;}
+  .gallery figure{margin:0;}
+  .gallery figure:nth-child(1) img{aspect-ratio:4/5;object-fit:cover;object-position:center;}
+  .gallery figure:nth-child(2){margin-top:86px;}
+  .gallery figure:nth-child(2) img{aspect-ratio:4/5;object-fit:cover;object-position:center 38%;}
+  .gallery figure:nth-child(3){grid-column:1/-1;width:84%;margin-left:0;}
+  .gallery figure:nth-child(3) img{aspect-ratio:16/9;object-fit:cover;object-position:center;}
+  .gallery figure:nth-child(4){grid-column:1/-1;width:min(48%,500px);margin-left:auto;margin-top:14px;}
+  .gallery figure:nth-child(4) img{aspect-ratio:3/4;object-fit:cover;object-position:center 45%;}
+  .gallery figcaption,.editorial-photo figcaption,.wide-photo figcaption{margin-top:11px;font-size:10px;letter-spacing:.12em;}
+}
+@media (max-width:980px){
+  .editorial-photo img{aspect-ratio:3/2;object-fit:cover;}
+  .wide-photo{width:min(82%,560px);margin-left:auto;margin-right:0;}
+  .wide-photo img{aspect-ratio:4/5;object-fit:cover;}
+  .gallery{grid-template-columns:1fr 1fr;gap:28px 18px;}
+  .gallery figure:nth-child(1) img,.gallery figure:nth-child(2) img{aspect-ratio:4/5;}
+  .gallery figure:nth-child(3){grid-column:1/-1;}
+  .gallery figure:nth-child(3) img{aspect-ratio:16/9;}
+  .gallery figure:nth-child(4){grid-column:1/-1;width:58%;margin-left:auto;}
+  .gallery figure:nth-child(4) img{aspect-ratio:3/4;}
+}
+@media (max-width:640px){
+  .wide-photo,.gallery figure:nth-child(4){width:100%;}
+  .gallery{grid-template-columns:1fr;gap:34px;}
+  .gallery figure:nth-child(2),.gallery figure:nth-child(3),.gallery figure:nth-child(4){grid-column:auto;margin-top:0;}
+  .gallery figure:nth-child(1) img,.gallery figure:nth-child(2) img,.gallery figure:nth-child(4) img{aspect-ratio:auto;height:auto;object-fit:contain;}
+  .gallery figure:nth-child(3) img{aspect-ratio:16/9;}
+}
+
+
+/* =========================================================
+   FINAL EDITORIAL REFINEMENT — typography + custom photo art direction
+   ========================================================= */
+:root{
+  --paper:#f4f0e8;
+  --paper2:#fbfaf7;
+  --ink:#171612;
+  --muted:#6b665e;
+  --line:#d5cec2;
+  --red:#9f211d;
+  --dark:#171715;
+  --shell:1240px;
+}
+
+.site-header{
+  background:rgba(251,250,247,.975);
+  border-bottom:1px solid var(--line);
+}
+.header-row{
+  min-height:86px;
+  height:auto;
+  padding:14px 0;
+}
+.wordmark-name{
+  font-size:clamp(22px,2.1vw,29px);
+  letter-spacing:.02em;
+}
+.wordmark-role{
+  margin-top:8px;
+  font-size:10px;
+  letter-spacing:.25em;
+}
+.desktop-nav{
+  font-size:10.5px;
+  gap:30px;
+}
+
+.hero{
+  min-height:68vh;
+}
+.hero-grid{
+  grid-template-columns:minmax(0,.9fr) minmax(500px,1.1fr);
+}
+.hero-copy{
+  padding:clamp(70px,7vw,108px) clamp(42px,6vw,88px);
+}
+.kicker,.small-label{
+  font-size:11px;
+  letter-spacing:.18em;
+  color:var(--red);
+}
+h1{
+  font-size:clamp(58px,6vw,92px);
+  line-height:.91;
+  letter-spacing:-.045em;
+  max-width:660px;
+  margin-bottom:28px;
+}
+.hero-deck{
+  font-size:clamp(20px,1.8vw,27px);
+  line-height:1.39;
+  max-width:610px;
+}
+.identity{
+  font-size:14.5px;
+  line-height:1.55;
+}
+.portrait,.portrait img{
+  min-height:68vh;
+}
+.portrait img{
+  object-position:center 36%;
+}
+
+.section{
+  padding:82px 0;
+}
+.section-grid{
+  grid-template-columns:112px minmax(0,1fr);
+  gap:48px;
+}
+.section-label{
+  padding-top:5px;
+  border-top:2px solid var(--red);
+}
+.section-label span{
+  font-size:11px;
+  line-height:1;
+  color:var(--red);
+  letter-spacing:.12em;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:800;
+}
+.section-label p{
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:.16em;
+}
+h2{
+  font-size:clamp(34px,3.7vw,52px);
+  line-height:1.04;
+  letter-spacing:-.035em;
+  max-width:840px;
+  margin-bottom:24px;
+}
+.lead{
+  font-size:clamp(20px,1.9vw,24px);
+  line-height:1.46;
+  max-width:790px;
+}
+.section-body{
+  max-width:1000px;
+}
+.section-body > p:not(.lead):not(.small-label),
+.about-layout p{
+  max-width:760px;
+}
+
+.about-layout{
+  grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);
+  gap:58px;
+  align-items:center;
+}
+.editorial-photo img{
+  aspect-ratio:3/2;
+  object-fit:cover;
+  object-position:center 50%;
+}
+
+.wide-photo{
+  width:min(58%,590px);
+  margin:48px 0 0 auto;
+}
+.wide-photo img{
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center 38%;
+}
+
+.research-facts{
+  grid-template-columns:repeat(4,1fr);
+}
+.research-facts span{
+  font-size:9.5px;
+}
+.research-facts strong{
+  font-size:16px;
+}
+
+.media-topics h3{
+  font-size:22px;
+}
+.media-topics p{
+  font-size:14px;
+}
+.cv-block>h3{
+  font-size:24px;
+}
+.cv-row strong{
+  font-size:17px;
+}
+.cv-row p{
+  font-size:14px;
+}
+
+/* Photography becomes a magazine sequence rather than a grid of equal cards. */
+.gallery{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:46px 28px;
+  align-items:start;
+  margin-top:42px;
+}
+.gallery figure{
+  margin:0;
+}
+.gallery img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  filter:saturate(.9) contrast(1.015);
+}
+.gallery figcaption,
+.editorial-photo figcaption,
+.wide-photo figcaption{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:9.5px;
+  line-height:1.4;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.photo-city img{
+  aspect-ratio:4/5;
+}
+.photo-camera{
+  margin-top:88px !important;
+}
+.photo-camera img{
+  aspect-ratio:4/5;
+  object-position:center 35%;
+}
+.photo-wide{
+  grid-column:1/-1;
+}
+.photo-wide:nth-of-type(3){
+  width:88%;
+}
+.photo-wide:nth-of-type(4){
+  width:76%;
+  margin-left:auto;
+}
+.photo-wide:nth-of-type(7){
+  width:90%;
+}
+.photo-wide img{
+  aspect-ratio:16/9;
+}
+.photo-square img{
+  aspect-ratio:1/1;
+}
+.photo-mangystau:first-of-type{
+  margin-top:72px;
+}
+.photo-mangystau img{
+  aspect-ratio:4/3;
+}
+.photo-archive{
+  grid-column:1/-1;
+  width:min(56%,620px);
+  margin-left:auto !important;
+}
+.photo-archive img{
+  aspect-ratio:4/3;
+}
+
+.email-link{
+  font-size:clamp(30px,4vw,52px);
+  border-bottom-width:2px;
+}
+
+@media(max-width:980px){
+  .header-row{min-height:72px;padding:10px 0}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:64px 28px 52px}
+  .portrait,.portrait img{min-height:auto}
+  .portrait img{aspect-ratio:16/10;max-height:70vh;object-fit:cover}
+  .section-grid{grid-template-columns:1fr;gap:22px}
+  .section-label{width:max-content;padding-top:8px}
+  .about-layout{grid-template-columns:1fr}
+  .wide-photo{width:min(76%,560px)}
+  .research-facts{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:640px){
+  .wordmark-name{font-size:20px}
+  .wordmark-role{font-size:9px}
+  h1{font-size:50px}
+  h2{font-size:35px}
+  .section{padding:58px 0}
+  .lead{font-size:20px}
+  .research-facts{grid-template-columns:1fr}
+  .wide-photo{width:100%}
+  .gallery{grid-template-columns:1fr;gap:34px}
+  .photo-camera,.photo-wide,.photo-square,.photo-mangystau,.photo-archive{
+    grid-column:auto;
+    width:100% !important;
+    margin:0 !important;
+  }
+  .gallery img,
+  .photo-city img,
+  .photo-camera img,
+  .photo-square img,
+  .photo-mangystau img,
+  .photo-archive img{
+    aspect-ratio:auto;
+    height:auto;
+    object-fit:contain;
+  }
+  .photo-wide img{aspect-ratio:16/9;object-fit:cover}
+}
