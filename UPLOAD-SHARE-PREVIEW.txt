@@ -1,0 +1,9 @@
+Replace index.html in the repository root.
+
+Upload this NEW file:
+images/social/holly-harris-diplomatic-military-history.jpg
+
+New link-preview title:
+Holly Harris | Diplomatic and Military History
+
+The new social-image filename is intentional and helps sharing services fetch a fresh preview instead of reusing the old cached placeholder.
