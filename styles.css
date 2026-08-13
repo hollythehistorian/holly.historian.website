@@ -187,3 +187,87 @@ h2{max-width:880px;margin:0 0 25px;font-size:clamp(38px,4vw,55px);font-weight:40
   .site-footer span{display:block;margin:3px 0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* =========================================================
+   OPTION 5 PROFILE REFINEMENT — larger portrait, readable identity
+   ========================================================= */
+@media (min-width: 981px) {
+  .hero-primary {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 68px;
+    align-items: center;
+    max-width: 1160px;
+  }
+
+  .hero-profile {
+    width: 300px;
+    align-self: center;
+  }
+
+  .author-portrait img {
+    width: 300px;
+    height: 375px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+
+  .hero-profile-copy {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-profile-copy strong {
+    margin-bottom: 8px;
+    font-size: 23px;
+    line-height: 1.15;
+  }
+
+  .hero-profile-copy span {
+    font-size: 12.25px;
+    line-height: 1.58;
+  }
+
+  .hero-profile-copy span:first-of-type {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 13.5px;
+  }
+}
+
+/* Keep the larger identity legible without overwhelming tablet layouts. */
+@media (min-width: 641px) and (max-width: 980px) {
+  .hero-profile {
+    grid-template-columns: 128px 1fr;
+    width: min(100%, 560px);
+    gap: 20px;
+  }
+
+  .author-portrait img {
+    width: 128px;
+    height: 160px;
+  }
+
+  .hero-profile-copy strong {
+    font-size: 21px;
+  }
+
+  .hero-profile-copy span {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+}
+
+/* On phones, preserve the successful compact author-card layout. */
+@media (max-width: 640px) {
+  .hero-profile-copy strong {
+    font-size: 18px;
+  }
+
+  .hero-profile-copy span {
+    font-size: 10.5px;
+    line-height: 1.5;
+  }
+}

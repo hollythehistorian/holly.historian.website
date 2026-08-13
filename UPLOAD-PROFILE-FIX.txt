@@ -1,0 +1,15 @@
+Replace these two files in the ROOT of your GitHub repository:
+
+1. index.html
+2. styles.css
+
+Changes:
+- red hero label now reads: Historian · Writer · Researcher
+- desktop headshot increased to 300 × 375 px
+- Holly Harris name and credentials under the headshot are substantially larger and easier to read
+- tablet profile is also enlarged
+- successful compact mobile layout is preserved
+- stylesheet version changed to force Safari to load the update
+
+Do not replace images.
+Do not change CNAME.
