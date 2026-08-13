@@ -1,0 +1,10 @@
+Replace index.html in the repository root.
+
+Upload:
+images/social/holly-harris-headshot-share-20260813.jpg
+
+This new social preview is made ONLY from the professional headshot.
+It uses a new filename to help break cached landscape previews.
+
+Research Approach is now:
+Diplomatic · International · Multi-Archive History
