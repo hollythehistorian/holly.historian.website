@@ -1,46 +1,37 @@
-# Holly Harris — refined editorial release
+# Holly Harris landing-page update
 
-Replace the existing website with the contents of this folder.
+This package contains a clean static landing-page refresh based on the requested changes.
 
-The public navigation remains:
-**About · Research · For Media · CV · Photography · Contact**
+## Changes included
 
-## Main visual changes
-- reduced hero headline size
-- larger, more confident HOLLY HARRIS / HISTORIAN masthead
-- stronger red section markers
-- smaller, better-proportioned section headings
-- narrower editorial text measure
-- custom photo ratios instead of equal template tiles
-- Kazakhstan photography arranged as a magazine sequence
+- Removed the Kazakhstan canyon image entirely.
+- Keeps the portrait as the only landing-page photograph.
+- Removes the name from the portrait caption.
+- Portrait caption now reads:
+  - `Ph.D. Candidate · University Ph.D. Fellow`
+  - `Southern Methodist University`
+- Red editorial eyebrow now reads:
+  - `Historian · Writer · Researcher`
+- Refined desktop and mobile spacing, typography, rules, and hover states.
+- No JavaScript or external font dependency is required.
 
-## Photo captions
-Field Notes images are captioned either:
-- `Mangystau Region, Kazakhstan · Summer 2025`
-- `Tian Shan Mountains, Kazakhstan · Summer 2025`
+## Files
 
-The Clinton archive image is labeled as archival research rather than Kazakhstan.
-
-## Copyright and security
-Website images are public derivatives. They contain:
-- a visible `© Holly Harris` mark
-- Artist and Copyright metadata
-- a rights statement
-- no inherited GPS/device metadata from the uploaded originals
-
-Read `PHOTO-SECURITY.txt`.
-
-A public website image cannot be encrypted while remaining viewable. Keep the original
-full-resolution photographs in private/encrypted storage and publish only these derivatives.
-
-## GitHub upload
-At the repository root, replace:
 - `index.html`
 - `styles.css`
-- the matching files under `images/`
+- `portrait.jpg`
 
-Upload the new `mangystau-01.webp`, `mangystau-02.webp`, and `landscape-05.webp` as new files.
+## GitHub
 
-Do not change or delete the working `CNAME`.
+Upload these files to the root of the repository you use for the website.
 
-After committing to `main`, wait for GitHub Pages to rebuild and hard-refresh the site.
+The navigation currently points to:
+- `/about/`
+- `/research/`
+- `/media/`
+- `/cv/`
+- `/photography/`
+
+If your existing site uses different routes, keep your current link destinations and use the new hero markup/styles.
+
+Note: the connected repository `hollyharris01-dev/hollyharris01-dev` is currently empty, so this package is a standalone landing page rather than an edit of existing repository files.
