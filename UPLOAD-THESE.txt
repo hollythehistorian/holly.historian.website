@@ -1,0 +1,19 @@
+UPLOAD THIS VERSION OVER THE CURRENT GITHUB FILES
+
+Replace:
+- index.html
+- styles.css
+- all matching files inside images/
+
+This version includes:
+- Catherine Palace integrated beside Research text
+- caption: Catherine Palace · St. Petersburg, Russia · 2015
+- much larger baked-in © HOLLY HARRIS watermark on every public photo
+- Artist/Copyright/XMP rights metadata
+- reduced-resolution public derivatives
+- no GPS metadata
+
+Keep CNAME unchanged.
+
+Because the copyright mark is physically baked into the image pixels, it remains visible
+if someone downloads the image directly from GitHub or the website.
