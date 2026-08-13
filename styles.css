@@ -390,3 +390,182 @@ h2{
   .research-editorial .wide-photo img{aspect-ratio:auto;height:auto;object-fit:contain}
   .research-editorial .research-facts{grid-template-columns:1fr}
 }
+
+
+/* =========================================================
+   OPTION 5 — text-first hero + small portrait + cinematic field image
+   ========================================================= */
+.hero-option5{
+  padding:0;
+  min-height:0;
+  background:var(--paper);
+}
+.hero-option5-inner{
+  width:min(1240px,calc(100% - 56px));
+  padding:72px 0 0;
+}
+.hero-option5-copy{
+  max-width:850px;
+  padding:0 0 50px 28px;
+}
+.hero-option5 h1{
+  font-size:clamp(60px,6.4vw,96px);
+  line-height:.9;
+  max-width:760px;
+  margin-bottom:26px;
+}
+.hero-option5 .hero-deck{
+  max-width:650px;
+  font-size:clamp(20px,1.9vw,27px);
+}
+.author-card{
+  display:grid;
+  grid-template-columns:92px minmax(0,1fr);
+  gap:18px;
+  align-items:center;
+  width:min(100%,520px);
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+}
+.author-portrait{
+  margin:0;
+  position:relative;
+}
+.author-portrait img{
+  width:92px;
+  height:112px;
+  object-fit:cover;
+  object-position:center 30%;
+}
+.author-card strong{
+  display:block;
+  font-family:var(--serif);
+  font-size:19px;
+  font-weight:500;
+  margin-bottom:5px;
+}
+.author-card span{
+  display:block;
+  font-size:11px;
+  line-height:1.55;
+  color:var(--muted);
+}
+.hero-landscape{
+  position:relative;
+  margin:0;
+  width:100%;
+}
+.hero-landscape img{
+  display:block;
+  width:100%;
+  height:clamp(300px,37vw,510px);
+  object-fit:cover;
+  object-position:center 55%;
+}
+.hero-landscape figcaption{
+  margin:10px 0 0;
+  font-size:9.5px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* About image: cinematic but intentionally shorter. */
+.about-layout{
+  grid-template-columns:minmax(0,1fr) minmax(400px,.95fr);
+  gap:52px;
+  align-items:center;
+}
+.editorial-photo img{
+  width:100%;
+  height:360px;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:center 56%;
+}
+
+/* Media briefing: clean editorial ledger, no numbered cards. */
+.media-ledger{
+  margin-top:38px;
+  border-top:1px solid #4b4945;
+}
+.media-ledger article{
+  display:grid;
+  grid-template-columns:170px minmax(220px,.75fr) minmax(280px,1fr);
+  gap:26px;
+  align-items:baseline;
+  padding:25px 0;
+  border-bottom:1px solid #4b4945;
+}
+.media-topic-label{
+  margin:0;
+  color:#d75a51;
+  font-size:10px;
+  line-height:1.4;
+  font-weight:800;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.media-ledger h3{
+  margin:0;
+  font-family:var(--serif);
+  font-size:21px;
+  line-height:1.2;
+  font-weight:400;
+}
+.media-ledger article>p:last-child{
+  margin:0;
+  color:#c8c3bb;
+  font-size:13.5px;
+  line-height:1.55;
+}
+.media-contact{
+  margin-top:42px;
+}
+
+/* Copyright overlays for hero landscape and author portrait; other photos are baked-in. */
+.hero-landscape::after{
+  content:"© HOLLY HARRIS";
+  position:absolute;
+  right:18px;
+  bottom:38px;
+  padding:8px 12px;
+  background:rgba(0,0,0,.52);
+  color:#fff;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.06em;
+}
+.author-portrait::after{
+  content:"© HH";
+  position:absolute;
+  right:4px;
+  bottom:4px;
+  padding:3px 5px;
+  background:rgba(0,0,0,.55);
+  color:#fff;
+  font-size:7px;
+  font-weight:800;
+}
+
+@media(max-width:900px){
+  .hero-option5-inner{width:min(100% - 32px,1240px);padding-top:54px}
+  .hero-option5-copy{padding-left:0}
+  .hero-landscape img{height:360px}
+  .about-layout{grid-template-columns:1fr}
+  .editorial-photo{width:92%;margin-left:auto}
+  .media-ledger article{grid-template-columns:140px 1fr;gap:12px 22px}
+  .media-ledger article>p:last-child{grid-column:2}
+}
+@media(max-width:640px){
+  .hero-option5 h1{font-size:52px}
+  .author-card{grid-template-columns:78px 1fr}
+  .author-portrait img{width:78px;height:96px}
+  .hero-landscape img{height:280px}
+  .editorial-photo{width:100%;margin-left:0}
+  .editorial-photo img{height:260px}
+  .media-ledger article{display:block;padding:22px 0}
+  .media-topic-label{margin-bottom:8px}
+  .media-ledger h3{margin-bottom:8px}
+}

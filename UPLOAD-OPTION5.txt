@@ -1,0 +1,17 @@
+OPTION 5 FINAL UPDATE
+
+Replace in GitHub:
+- index.html
+- styles.css
+- images/about-archive.webp
+
+If you already uploaded the latest copyright-prominent image set, the other images do not need to be replaced.
+
+Changes:
+- Option 5 text-first opening
+- small professional headshot in an author identity block
+- wide cinematic Tian Shan landscape directly below opening
+- About Mangystau photograph shortened substantially
+- About photo rebuilt from your re-upload with fresh copyright metadata and no inherited GPS/device metadata
+- For Media briefing redesigned as a skim-friendly editorial ledger instead of numbered 1–4 cards
+- Catherine Palace integration/caption retained from the previous final package
