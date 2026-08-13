@@ -1,0 +1,26 @@
+EDITORIAL RESET — upload instructions
+
+This version fixes the broken landing page and removes all visible © Holly Harris marks from the public photographs.
+
+IMPORTANT:
+- Keep your CURRENT `images/headshot.jpeg` on GitHub. This package intentionally does not replace it.
+- Replace `index.html` and `styles.css`.
+- Replace the matching photo files included under `images/`.
+- Keep `CNAME` unchanged.
+
+The public photo derivatives still contain invisible copyright metadata:
+Artist: Holly Harris
+Copyright: Copyright Holly Harris. All rights reserved.
+They do not carry original GPS metadata.
+
+Landing page:
+- true two-column editorial composition
+- text and small headshot on the left
+- cinematic Tian Shan image on the right
+- no giant headshot
+
+For Media:
+- numbered 01–04 entries retained
+- two-column editorial ledger on desktop
+- no boxy cards
+- collapses cleanly on mobile
