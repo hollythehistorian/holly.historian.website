@@ -1,0 +1,20 @@
+WEB-RESOLUTION PHOTO POLICY
+
+These are intentionally reduced-resolution public derivatives.
+
+Feature images:
+- maximum long edge: 1400 px
+- quality: ~80–82
+
+Photography gallery:
+- maximum long edge: 1200 px
+- quality: ~78
+
+They remain clear for normal website viewing on phones and laptops, but are materially less useful for printing, cropping, or commercial reuse than the full-resolution originals.
+
+All public copies retain:
+- visible © Holly Harris mark
+- copyright/artist metadata
+- no original GPS/device metadata
+
+Keep full-resolution originals outside the public GitHub repository.
