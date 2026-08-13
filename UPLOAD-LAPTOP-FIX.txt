@@ -1,0 +1,18 @@
+OPTION 5 — LAPTOP REFINEMENT
+
+Replace only these two files in the ROOT of your GitHub repository:
+- index.html
+- styles.css
+
+Do not replace your images folder.
+Do not change CNAME.
+
+What changed:
+- preserves the Option 5 mobile experience
+- makes the desktop headline substantially larger
+- keeps the headshot small and professionally framed
+- moves the horizontal Mangystau photograph into a cinematic transition between the opening and About
+- removes the repeated About image
+- rewrites About so it is easier to read and does not repeat the hero language
+- adds a cache-busting stylesheet URL so Safari loads the new CSS instead of an older cached version
+- leaves Research, For Media, CV, Photography, Contact, photo copyrights, and metadata unchanged
